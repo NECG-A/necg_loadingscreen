@@ -1,0 +1,20 @@
+progress {
+    margin: 1em;
+    justify-self: center;
+    background: transparent;
+}
+
+progress::-webkit-progress-bar {
+    background: transparent;
+}
+
+progress::-webkit-progress-value {
+    background-color: white;
+    background: linear-gradient(90deg,#ffffff40, #fff);
+    border-radius: 1em;
+    transition: width 2s, background-color 2s;
+}
+
+progress[value='1']::-webkit-progress-value {
+    background-color: rgba(255, 255, 255, 0.348);
+}

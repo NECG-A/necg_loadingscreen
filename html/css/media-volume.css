@@ -1,0 +1,56 @@
+div {
+    display: flex;
+    max-width: 12em;
+    height: 3em;
+    border-radius: 2em;
+}
+
+div:hover {
+    background-color: #28282899;
+}
+
+img {
+    cursor: pointer;
+}
+
+img.high {
+    content: url(../static/img/audio-high.svg);
+}
+
+img.low {
+    content: URL(../static/img/audio-low.svg);
+}
+
+img.muted {
+    content: URL(../static/img/audio-muted.svg);
+}
+
+input {
+    display: none;
+    margin: 0;
+    border: none;
+    appearance: none;
+    background: none;
+}
+
+div:hover input {
+    display: unset;
+    margin-right: 1em;
+}
+
+input::-webkit-slider-runnable-track {
+    background-color: #ffffff40;
+    border-radius: 1em;
+}
+
+input::-webkit-slider-thumb {
+    width: 1em;
+    height: 1em;
+    border-radius: 1em;
+    appearance: none;
+    cursor: pointer;
+}
+
+input:hover::-webkit-slider-thumb {
+    background-color: white;
+}
